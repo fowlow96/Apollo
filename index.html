@@ -1,0 +1,544 @@
+<html>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Rajdhani" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('Ltext').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('Rtext').innerHTML=document.getElementById(id).innerHTML}</script>
+<style type="text/css">
+.tabs {
+width: 100%;
+height: 100%;
+display: block; 
+}
+
+h1 {
+text-align: center;
+font-size: 300%;
+color: #229327;
+font-family: 'Rajdhani', sans-serif;
+}
+
+h2 {
+text-align: center;
+font-size: 150%;
+color: #229327;
+font-family: 'Rajdhani', sans-serif;
+}
+
+#container {
+position: absolute; 
+top: 0%;
+left: 0%;
+height: 100%;
+width: 100%;
+background: url("https://i.pinimg.com/originals/cb/20/a1/cb20a15e56a62912f3084cced793e446.gif");
+background-size: 100% 100%;
+}
+
+#L {
+position: fixed;
+top: 5%;
+left: 5%;
+height: 90%;
+width: 30%; 
+background: url("https://i.pinimg.com/736x/95/8c/86/958c866943994b2598e9f56eed018434--places-to-go-places-in-italy.jpg");
+background-size: 100% 100%;
+border-style: solid;
+border-color: #229327; 
+border-width: 3px 0px 3px 3px; 
+}
+
+#Lcoat {
+position: fixed;
+top: 5.5%;
+left: 5.2%;
+height: 90%;
+width: 30%;
+background: #000000;
+opacity: .7;
+}
+
+#Ltext {
+position: fixed;
+top: 6%;
+left: 5.5%;
+height: 74%;
+width: 29%;
+font-size: 80%;
+color: #C2CDC9;
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#pic1 {
+position: fixed; 
+top: 5%;
+left: 35%; 
+width: 6%;
+height: 90%; 
+background: url("https://i.imgur.com/Ni8lgJG.jpg");
+background-size: 250% 100%;
+border-style: solid;
+border-color: #229327; 
+border-width: 3px 0px 3px 0px; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+z-index: 2;
+}
+
+#pic1:hover {
+width: 30%;
+z-index: 5; 
+background-size: 100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic2 {
+position: fixed; 
+top: 5%;
+left: 41%; 
+width: 6%;
+height: 90%; 
+background: url("https://i.imgur.com/TgMjV49.png");
+background-size: 250% 100%;
+border-style: solid;
+border-color: #229327; 
+border-width: 3px 0px 3px 0px; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+z-index: 2;
+}
+
+#pic2:hover {
+left: 35%;
+width: 30%;
+z-index: 5; 
+background-size: 100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic3 {
+position: fixed; 
+top: 5%;
+left: 47%; 
+width: 6%;
+height: 90%; 
+background: url("https://i.imgur.com/67xbCj7.jpg");
+background-size: 200% 150%;
+border-style: solid;
+border-color: #229327; 
+border-width: 3px 0px 3px 0px; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+z-index: 2;
+}
+
+#pic3:hover {
+left: 35%;
+width: 30%;
+z-index: 5; 
+background-size: 100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic4 {
+position: fixed; 
+top: 5%;
+left: 53%; 
+width: 6%;
+height: 90%; 
+background: url("https://i.imgur.com/rxG6AOe.jpg");
+background-size: 150% 100%;
+border-style: solid;
+border-color: #229327; 
+border-width: 3px 0px 3px 0px;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out; 
+z-index: 2;
+}
+
+#pic4:hover {
+left: 35%;
+width: 30%;
+z-index: 5; 
+background-size: 100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic5 {
+position: fixed; 
+top: 5%;
+left: 59%; 
+width: 6%;
+height: 90%; 
+background: url("https://i.imgur.com/xLYIOCs.jpg");
+background-size: 200% 100%;
+border-style: solid;
+border-color: #229327; 
+border-width: 3px 0px 3px 0px; 
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+z-index: 2;
+}
+
+#pic5:hover {
+left: 35%;
+width: 30%;
+z-index: 5; 
+background-size: 100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#R {
+position: fixed;
+top: 5%;
+left: 65%;
+height: 90%;
+width: 30%; 
+background: url("https://i.pinimg.com/originals/ac/48/37/ac483780b272224c966d9c608e17241c.jpg");
+background-size: 100% 100%;
+background-size: 100% 100%;
+border-style: solid;
+border-color: #229327; 
+border-width: 3px 3px 3px 0px; 
+}
+
+#Rcoat {
+position: fixed;
+top: 5.5%;
+left: 65%;
+height: 90%;
+width: 30%;
+background: #000000;
+opacity: .7;
+}
+
+#Rtext {
+position: fixed;
+top: 6%;
+left: 65.5%;
+height: 74%;
+width: 29%;
+font-size: 80%;
+color: #C2CDC9;
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+#Lbutton1 {
+position: fixed;
+top: 80%;
+left: 5%;
+height: 12%;
+width: 6%;
+background: url("https://i.imgur.com/QhdrRhg.gif")!important;
+background-repeat: no-repeat!important;
+background-position: center!important;
+background-size: 100% 100%!important;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Ltext1 {
+position: fixed;
+top: 91%;
+left: 5.2%; 
+height: 5%;
+width: 6%; 
+font-size: 80%; 
+color: #C2CDC9;
+text-align: center;
+font-family: 'Rajdhani', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Lbutton1:hover {
+background: url("https://i.imgur.com/9sj47cl.gif")!important;
+background-repeat: no-repeat!important;
+background-position: center!important;
+background-size: 100% 100%!important;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+opacity: 1; 
+}
+
+#Lbutton2 {
+position: fixed;
+top: 80%;
+left: 17%;
+height: 12%;
+width: 6%;
+background: url("https://i.giphy.com/media/RJuMdO6sbeNNu/source.gif");
+background-size: 100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Ltext2 {
+position: fixed;
+top: 91%;
+left: 17%; 
+height: 5%;
+width: 6%; 
+font-size: 80%; 
+color: #C2CDC9;
+text-align: center;
+font-family: 'Rajdhani', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Lbutton2:hover {
+background: url("https://i.imgur.com/9sj47cl.gif")!important;
+background-repeat: no-repeat!important;
+background-position: center!important;
+background-size: 100% 100%!important;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+opacity: 1; 
+}
+
+#Lbutton3 {
+position: fixed;
+top: 80%;
+left: 29%;
+height: 12%;
+width: 6%;
+background: url("https://i.giphy.com/media/RJuMdO6sbeNNu/source.gif");
+background-size: 100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Ltext3 {
+position: fixed;
+top: 91%;
+left: 29%; 
+height: 5%;
+width: 6%; 
+font-size: 80%; 
+color: #C2CDC9;
+text-align: center;
+font-family: 'Rajdhani', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Lbutton3:hover {
+background: url("https://i.imgur.com/9sj47cl.gif")!important;
+background-repeat: no-repeat!important;
+background-position: center!important;
+background-size: 100% 100%!important;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+opacity: 1; 
+}
+
+#Lbutton3:hover ~ #Ltext3 {
+color: #229327;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Lbutton2:hover ~ #Ltext2 {
+color: #229327;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Lbutton1:hover ~ #Ltext1 {
+color: #229327;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Rbutton1 {
+position: fixed;
+top: 80%;
+left: 65%;
+height: 12%;
+width: 6%;
+background: url("https://i.giphy.com/media/RJuMdO6sbeNNu/source.gif");
+background-size: 100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Rtext1 {
+position: fixed;
+top: 91%;
+left: 65%; 
+height: 5%;
+width: 6%; 
+font-size: 80%; 
+color: #C2CDC9;
+text-align: center;
+font-family: 'Rajdhani', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Rbutton1:hover {
+background: url("https://i.imgur.com/9sj47cl.gif")!important;
+background-repeat: no-repeat!important;
+background-position: center!important;
+background-size: 100% 100%!important;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+opacity: 1; 
+}
+
+#Rbutton2 {
+position: fixed;
+top: 80%;
+left: 77%;
+height: 12%;
+width: 6%;
+background: url("https://i.giphy.com/media/RJuMdO6sbeNNu/source.gif");
+background-size: 100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Rtext2 {
+position: fixed;
+top: 91%;
+left: 77%; 
+height: 5%;
+width: 6%; 
+font-size: 80%; 
+color: #C2CDC9;
+text-align: center;
+font-family: 'Rajdhani', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Rbutton2:hover {
+background: url("https://i.imgur.com/9sj47cl.gif")!important;
+background-repeat: no-repeat!important;
+background-position: center!important;
+background-size: 100% 100%!important;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+opacity: 1; 
+}
+
+#Rbutton3 {
+position: fixed;
+top: 80%;
+left: 89%;
+height: 12%;
+width: 6%;
+background: url("https://i.giphy.com/media/RJuMdO6sbeNNu/source.gif");
+background-size: 100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Rtext3 {
+position: fixed;
+top: 91%;
+left: 89%; 
+height: 5%;
+width: 6%; 
+font-size: 80%; 
+color: #C2CDC9;
+text-align: center;
+font-family: 'Rajdhani', sans-serif;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Rbutton3:hover {
+background: url("https://i.imgur.com/9sj47cl.gif")!important;
+background-repeat: no-repeat!important;
+background-position: center!important;
+background-size: 100% 100%!important;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+opacity: 1; 
+}
+
+#Rbutton3:hover ~ #Rtext3 {
+color: #229327;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Rbutton2:hover ~ #Rtext2 {
+color: #229327;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#Rbutton1:hover ~ #Rtext1 {
+color: #229327;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#basic,#detail,#history,#conjuration,#bardism,#magnetism {
+display: none;
+}
+
+</style>
+<div id="container">
+<div id="L"></div>
+<div id="pic1"></div><div id="pic2"></div><div id="pic3"></div><div id="pic4"></div><div id="pic5"></div>
+<div id="R"></div><div id="Lcoat"></div><div id="Rcoat"></div>
+<div id="Lbutton1"><span class="tabs" onClick="changeNavigation ('basic')"></span></div>
+<div id="Lbutton2"><span class="tabs" onClick="changeNavigation ('detail')"></span></div>
+<div id="Lbutton3"><span class="tabs" onClick="changeNavigation ('history')"></span></div>
+<div id="Rbutton1"><span class="tabs" onClick="changeNavigation1 ('conjuration')"></span></div>
+<div id="Rbutton2"><span class="tabs" onClick="changeNavigation1 ('bardism')"></span></div>
+<div id="Rbutton3"><span class="tabs" onClick="changeNavigation1 ('magnetism')"></span></div>
+<div id="Ltext1">Basic Info</div><div id="Ltext2">Detailed Info</div><div id="Ltext3">History</div>
+<div id="Rtext1">Conjuration</div><div id="Rtext2">Bardism</div><div id="Rtext3">Magnetism</div>
+<div id="Ltext"><h1>Apollo</h1></div>
+<div id="Rtext"><h1>O'Connor</h1></div>
+<div id="basic"><h1>Basic Information</h1></div>
+<div id="detail"><h1>Detailed Information</h1><br><br><h2>Appearance<h2><br><br><h2>Personality</h2></div>
+<div id="history"><h1>History</h1></div>
+<div id="conjuration"><h1>Conjuration Spells</h1></div>
+<div id="bardism"><h1>Bardism Spells</h1></div>
+<div id="magnetism"><h1>Magnetism Spells</h1></div>
+</div>
+</html>
